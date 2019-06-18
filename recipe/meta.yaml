@@ -1,6 +1,6 @@
 {% set name = "toastedmarshmallow" %}
-{% set version = "0.2.6" %}
-{% set sha256 = "15dee79cac691c0a1dc9df694b6e014d00d465b588f49b893c9ece27d09856a0" %}
+{% set version = "2.15.1" %}
+{% set sha256 = "8a759a214f7e92a9a855e7af8a33a90f0438fe552b839a2c8191a8261eab596b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - attrs >=17.1.0
