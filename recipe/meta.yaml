@@ -1,6 +1,6 @@
 {% set name = "toastedmarshmallow" %}
-{% set version = "2.15.2" %}
-{% set sha256 = "13174fc15a1ae2776bc28ed1e74f5726851082f951b4482d433d05c38c9d6a92" %}
+{% set version = "2.15.2.post1" %}
+{% set sha256 = "aad7c89720a27d6362e1362394ceaedf5e1648aba4506c1971da35b3642810e9" %}
 
 package:
   name: {{ name|lower }}
